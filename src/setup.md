@@ -1,3 +1,3 @@
 # Setup
 
-This chapter helps you to add IgKnite to your Discord server without any additional hassle.
+This chapter of the documentation explains how to add IgKnite to your Discord serer using two different authentication methods. It also helps you afterwards by explaining how permissions are handled for commands.

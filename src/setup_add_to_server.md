@@ -1,4 +1,4 @@
-# Adding IgKnite to your Discord Server
+# Adding to your Discord Server
 
 The very first, and the very basic, step of using IgKnite is like any other Discord bot. Traditionally, most of the Discord bots that we see today are hosted already by their corresponding maintainer, and IgKnite is no exception too.
 

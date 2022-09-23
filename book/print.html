@@ -82,7 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="setup.html"><strong aria-hidden="true">2.</strong> Setup</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="setup_add_to_server.html"><strong aria-hidden="true">2.1.</strong> Adding to Discord Server</a></li><li class="chapter-item expanded "><a href="setup_initialization.html"><strong aria-hidden="true">2.2.</strong> Initialization</a></li></ol></li><li class="chapter-item expanded "><a href="self_host.html"><strong aria-hidden="true">3.</strong> Self-Host</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="self_host_prerequisites.html"><strong aria-hidden="true">3.1.</strong> Prerequisites</a></li><li class="chapter-item expanded "><a href="self_host_secrets.html"><strong aria-hidden="true">3.2.</strong> Setting the Secrets</a></li><li class="chapter-item expanded "><a href="self_host_docker.html"><strong aria-hidden="true">3.3.</strong> The Docker Way</a></li><li class="chapter-item expanded "><a href="self_host_manually.html"><strong aria-hidden="true">3.4.</strong> The Manual Way</a></li></ol></li><li class="chapter-item expanded "><a href="commands.html"><strong aria-hidden="true">4.</strong> Commands</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="setup.html"><strong aria-hidden="true">2.</strong> Setup</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="setup_add_to_server.html"><strong aria-hidden="true">2.1.</strong> Adding to Server</a></li><li class="chapter-item expanded "><a href="setup_post.html"><strong aria-hidden="true">2.2.</strong> Post-Setup</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -147,11 +147,31 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="overview"><a class="header" href="#overview">Overview</a></h1>
-<p>IgKnite is completely open-source and seeks to offer its user base a consistent, useful experience when it comes to commands. And we felt compelled to provide this documentation so that YOU may take use of the unified functionality that we are attempting to offer in this instance.</p>
-<p>This documentation explains everything; from adding IgKnite to your Discord server to its commands to even self-hosting IgKnite on your machine. It is written in pure English, but we also have plans to translate it in different languages in the near future.</p>
+<div class="table-wrapper"><table><thead><tr><th>⚠️</th><th>This webpage is still under construction.</th></tr></thead><tbody>
+</tbody></table>
+</div>
+<h2 id="what-is-a-bot"><a class="header" href="#what-is-a-bot">What is a bot?</a></h2>
+<p>IgKnite, like many other Discord applications, is a <strong>bot.</strong> Being a bot on Discord mostly means using the endpoints provided by it via its API (Application Programming Interface) to do some action. There are tons of options to choose from, in this case. <a href=""><strong>MEE6</strong></a>, <a href=""><strong>Fredboat</strong></a>, <a href=""><strong>PokeTwo</strong></a> - these are some of the most popular bots that you can access.</p>
+<h2 id="why-igknite"><a class="header" href="#why-igknite">Why IgKnite?</a></h2>
+<p>IgKnite, unlike most other Discord bots, is <a href=""><strong>open-source</strong></a>, meaning that all of the aspects of it is open to and maintained by, (yes you guessed it) the community!</p>
+<p>IgKnite is also built on top off Discord's bleeding-edge API changes including <strong>slash commands</strong>, resulting in an interaction method that doesn't include text commands at all. This also means that you will never have the hassle to type in a prefix and then making sure that your command is written perfectly. IgKnite also contains interaction methods like message / user commands which, for most of the time, do not even require you to type anything!</p>
+<h2 id="why-this-guide"><a class="header" href="#why-this-guide">Why this guide?</a></h2>
+<p>While the README.md file might not be enough to guide you through the setup phase and the different use cases of IgKnite, this documentation can help you in the initial run. It contains all the necessary information to:</p>
+<ul>
+<li><input disabled="" type="checkbox" checked=""/>
+Add IgKnite to your Discord server and set it up.</li>
+<li><input disabled="" type="checkbox" checked=""/>
+Learn about commands, updates and upcoming features.</li>
+<li><input disabled="" type="checkbox" checked=""/>
+Learn how IgKnite's backend handles your actions.</li>
+<li><input disabled="" type="checkbox" checked=""/>
+Self-host IgKnite on your local machine / the cloud.</li>
+</ul>
+<br>
+<p>We hope that you will have a lot of fun using IgKnite and that's why we'll leave the post-documentation stuff to you. After all, exploration is a lot more enjoyable than reading.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="setup"><a class="header" href="#setup">Setup</a></h1>
-<p>This chapter helps you to add IgKnite to your Discord server without any additional hassle.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="adding-igknite-to-your-discord-server"><a class="header" href="#adding-igknite-to-your-discord-server">Adding IgKnite to your Discord Server</a></h1>
+<p>This chapter of the documentation explains how to add IgKnite to your Discord serer using two different authentication methods. It also helps you afterwards by explaining how permissions are handled for commands.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="adding-to-your-discord-server"><a class="header" href="#adding-to-your-discord-server">Adding to your Discord Server</a></h1>
 <p>The very first, and the very basic, step of using IgKnite is like any other Discord bot. Traditionally, most of the Discord bots that we see today are hosted already by their corresponding maintainer, and IgKnite is no exception too.</p>
 <h2 id="method-1-the-link"><a class="header" href="#method-1-the-link">Method 1: The Link</a></h2>
 <p>This method has been on Discord for a while now, and involves <a href="https://en.wikipedia.org/wiki/OAuth">OAuth</a> URLs.</p>
@@ -181,13 +201,7 @@
 <p>Finally, fill in the CAPTCHA requirements to add IgKnite to your Discord server.</p>
 </li>
 </ol>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="initialization"><a class="header" href="#initialization">Initialization</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="self-host"><a class="header" href="#self-host">Self-Host</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="prerequisites"><a class="header" href="#prerequisites">Prerequisites</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="setting-the-secrets"><a class="header" href="#setting-the-secrets">Setting the Secrets</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="the-docker-way"><a class="header" href="#the-docker-way">The Docker Way</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="the-manual-way"><a class="header" href="#the-manual-way">The Manual Way</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="commands"><a class="header" href="#commands">Commands</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="post-setup"><a class="header" href="#post-setup">Post-setup</a></h1>
 
                     </main>
 
