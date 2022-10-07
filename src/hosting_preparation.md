@@ -1,7 +1,5 @@
 # Preparation
 
-<br>
-
 ## Cloning the repository
 
 Before we continue on with the upcoming procedures, let's make sure we actually have IgKnite downloaded on the machine of your choice.
@@ -19,9 +17,7 @@ $ git clone git@github.com:IgKniteDev/IgKnite.git
 $ gh repo clone IgKniteDev/IgKnite
 ```
 
-As you can see, there are actually three different commands for you to choose from. This is typically provided by GitHub right at the repository home page, but we've written it here so you don't have to search :P
-
-<br>
+As you can see, there are actually three different commands for you to choose from. This is typically provided by GitHub right at the repository home page, but we've written it here so you don't have to search :P <br>
 
 ## Creating the bot
 
@@ -33,9 +29,7 @@ If you'd like to get into more detail about this topic, kindly check out [this a
 - Create a new application.
 - Choose **Bots** from the sidebar and enable it.
 
-That's it! You now have a new Discord bot; ready to be online. 
-
-<br>
+That's it! You now have a new Discord bot; ready to be online. <br>
 
 But this bot is still not in your server. In order to add the bot to your personal Discord server or have a friend use it:
 
@@ -46,9 +40,7 @@ But this bot is still not in your server. In order to add the bot to your person
 	<img src='static/permissions.png' alt='Permissions'>
 	
 - Copy the link generated below and open it in a new tab.
-- Choose your server, fill in the CAPTCHA and voila!
-
-<br>
+- Choose your server, fill in the CAPTCHA and voila! <br>
 
 ## Getting the files ready 
 
@@ -62,9 +54,7 @@ $ cd IgKnite && ls
 You'll see a bunch of file names appearing on your terminal. One of them is `.env.sample` and your very first steps will be to:
 
 - Rename `.env.sample` to `.env` and save.
-- Open the renamed file with your favorite code editor.
-
-<br>
+- Open the renamed file with your favorite code editor. <br>
 
 ## Knowing the secrets
 
@@ -79,9 +69,7 @@ SPOTIFY_CLIENT_ID=
 SPOTIFY_CLIENT_SECRET=
 ```
 
-These are the four environment variables which are all mandatory for running IgKnite. Two of them can be obtained from the [Discord Developer Portal](https://discord.com/developers) and the other two from [Spotify for Developers](https://developer.spotify.com/) respectively.
-
-<br>
+These are the four environment variables which are all mandatory for running IgKnite. Two of them can be obtained from the [Discord Developer Portal](https://discord.com/developers) and the other two from [Spotify for Developers](https://developer.spotify.com/) respectively. <br>
 
 ## Getting the environment variables
 
@@ -100,8 +88,6 @@ Speaking of the variables related to Spotify, those are relatively easy to get a
 - Navigate to the [Spotify for Developers] web page.
 - Choose **Dashboard** from the top bar and click on 'Create an App'.
 - Copy the **Client ID** from the app's window and paste it inside the `SPOTIFY_CLIENT_ID` variable.
-- Similarly, copy the **Client Secret** and paste it inside the `SPOTIFY_CLIENT_SECRETS` variable.
-
-<br>
+- Similarly, copy the **Client Secret** and paste it inside the `SPOTIFY_CLIENT_SECRETS` variable. <br>
 
 That's basically it! Now we are fully ready to run IgKnite.

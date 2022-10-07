@@ -1,8 +1,6 @@
 # Adding to your Discord Server
 
-The very first, and the very basic, step of using IgKnite is to add it to your precious Discord servers. Traditionally, most of the Discord bots that we see today are hosted already by their corresponding maintainers, and IgKnite is no exception too.
-
-<br>
+The very first, and the very basic, step of using IgKnite is to add it to your precious Discord servers. Traditionally, most of the Discord bots that we see today are hosted already by their corresponding maintainers, and IgKnite is no exception too. <br>
 
 ## Method 1: The Link
 
@@ -10,9 +8,7 @@ This method has been on Discord for a while now, and involves [OAuth](https://en
 
 - If you head over to [IgKnite's official website](https://igknitedev.github.io/), you will see a button labelled **'Inject'** (that is what we call it here; fancy, right?) Simply click it and you will be redirected to one of Discord's child websites which will allow you to add IgKnite to your Discord server. 
 
-- Or, you can just [click here](https://discord.com/api/oauth2/authorize?client_id=1016637486702792735&permissions=1505385246135&scope=bot%20applications.commands) without going to the website to do the same.
-
-<br>
+- Or, you can just [click here](https://discord.com/api/oauth2/authorize?client_id=1016637486702792735&permissions=1505385246135&scope=bot%20applications.commands) without going to the website to do the same. <br>
 
 ## Method 2: The Profile
 

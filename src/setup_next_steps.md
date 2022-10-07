@@ -1,8 +1,6 @@
 # Next steps
 
-Once you've added IgKnite to your Discord server, we can continue on with the setup process. 
-
-<br>
+Once you've added IgKnite to your Discord server, we can continue on with the setup process. <br>
 
 ## Role-locking
 
@@ -11,9 +9,7 @@ Most moderation Discord bots lock certain features to certain individuals, roles
 - `BotMod` - For moderators.
 - `BotAdmin` - For administratiors.
 
-These two roles will help unlock and trigger certain moderation commands for the people you choose to give these roles to. Make sure to carefully select and append the roles. IgKnite doesn't really need much more setup than this!
-
-<br>
+These two roles will help unlock and trigger certain moderation commands for the people you choose to give these roles to. Make sure to carefully select and append the roles. IgKnite doesn't really need much more setup than this! <br>
 
 ## Using the commands
 

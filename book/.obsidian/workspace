@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "hosting_manual.md",
+            "file": "development_command.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "hosting_manual.md",
+                "file": "development_command.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "hosting_manual.md",
+                "file": "development_command.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "hosting_manual.md"
+                "file": "development_command.md"
               }
             }
           }
@@ -130,15 +130,15 @@
   },
   "active": "3787213b88f439e0",
   "lastOpenFiles": [
+    "development.md",
+    "hosting_manual.md",
     "hosting_docker.md",
     "hosting_preparation.md",
     "setup_next_steps.md",
-    "overview.md",
-    "hosting_manual.md",
-    "SUMMARY.md",
+    "setup_add_to_server.md",
     "setup.md",
-    "hosting.md",
-    "development.md",
-    "().md"
+    "overview.md",
+    "SUMMARY.md",
+    "development_command.md"
   ]
 }

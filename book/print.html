@@ -82,7 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="setup.html"><strong aria-hidden="true">2.</strong> Setup</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="setup_add_to_server.html"><strong aria-hidden="true">2.1.</strong> Adding to Server</a></li><li class="chapter-item expanded "><a href="setup_next_steps.html"><strong aria-hidden="true">2.2.</strong> Next steps</a></li></ol></li><li class="chapter-item expanded "><a href="hosting.html"><strong aria-hidden="true">3.</strong> Hosting</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="hosting_preparation.html"><strong aria-hidden="true">3.1.</strong> Preparation</a></li><li class="chapter-item expanded "><a href="hosting_docker.html"><strong aria-hidden="true">3.2.</strong> The Docker Way</a></li><li class="chapter-item expanded "><a href="hosting_manual.html"><strong aria-hidden="true">3.3.</strong> The Manual Way</a></li></ol></li><li class="chapter-item expanded "><a href="development.html"><strong aria-hidden="true">4.</strong> Development Setup</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="setup.html"><strong aria-hidden="true">2.</strong> Setup</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="setup_add_to_server.html"><strong aria-hidden="true">2.1.</strong> Adding to Server</a></li><li class="chapter-item expanded "><a href="setup_next_steps.html"><strong aria-hidden="true">2.2.</strong> Next steps</a></li></ol></li><li class="chapter-item expanded "><a href="hosting.html"><strong aria-hidden="true">3.</strong> Hosting</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="hosting_preparation.html"><strong aria-hidden="true">3.1.</strong> Preparation</a></li><li class="chapter-item expanded "><a href="hosting_docker.html"><strong aria-hidden="true">3.2.</strong> The Docker Way</a></li><li class="chapter-item expanded "><a href="hosting_manual.html"><strong aria-hidden="true">3.3.</strong> The Manual Way</a></li></ol></li><li class="chapter-item expanded "><a href="development.html"><strong aria-hidden="true">4.</strong> Development Setup</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="development_command.html"><strong aria-hidden="true">4.1.</strong> Adding commands</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -166,8 +166,7 @@
 <div style="break-before: page; page-break-before: always;"></div><h1 id="setup"><a class="header" href="#setup">Setup</a></h1>
 <p>This chapter of the documentation explains how to add IgKnite to your Discord server using two different authentication methods. It also explains how permissions are handled to lock certain commands within IgKnite later on, so that you can properly utilize the full power of the project!</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="adding-to-your-discord-server"><a class="header" href="#adding-to-your-discord-server">Adding to your Discord Server</a></h1>
-<p>The very first, and the very basic, step of using IgKnite is to add it to your precious Discord servers. Traditionally, most of the Discord bots that we see today are hosted already by their corresponding maintainers, and IgKnite is no exception too.</p>
-<br>
+<p>The very first, and the very basic, step of using IgKnite is to add it to your precious Discord servers. Traditionally, most of the Discord bots that we see today are hosted already by their corresponding maintainers, and IgKnite is no exception too. <br></p>
 <h2 id="method-1-the-link"><a class="header" href="#method-1-the-link">Method 1: The Link</a></h2>
 <p>This method has been on Discord for a while now, and involves <a href="https://en.wikipedia.org/wiki/OAuth">OAuth</a> URLs.</p>
 <ul>
@@ -175,10 +174,9 @@
 <p>If you head over to <a href="https://igknitedev.github.io/">IgKnite's official website</a>, you will see a button labelled <strong>'Inject'</strong> (that is what we call it here; fancy, right?) Simply click it and you will be redirected to one of Discord's child websites which will allow you to add IgKnite to your Discord server. </p>
 </li>
 <li>
-<p>Or, you can just <a href="https://discord.com/api/oauth2/authorize?client_id=1016637486702792735&amp;permissions=1505385246135&amp;scope=bot%20applications.commands">click here</a> without going to the website to do the same.</p>
+<p>Or, you can just <a href="https://discord.com/api/oauth2/authorize?client_id=1016637486702792735&amp;permissions=1505385246135&amp;scope=bot%20applications.commands">click here</a> without going to the website to do the same. <br></p>
 </li>
 </ul>
-<br>
 <h2 id="method-2-the-profile"><a class="header" href="#method-2-the-profile">Method 2: The Profile</a></h2>
 <p>This method, unlike the previous one, is new and uses Discord's <a href="">In-App Authorization</a> feature. </p>
 <ol>
@@ -196,16 +194,14 @@
 </li>
 </ol>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="next-steps"><a class="header" href="#next-steps">Next steps</a></h1>
-<p>Once you've added IgKnite to your Discord server, we can continue on with the setup process. </p>
-<br>
+<p>Once you've added IgKnite to your Discord server, we can continue on with the setup process. <br></p>
 <h2 id="role-locking"><a class="header" href="#role-locking">Role-locking</a></h2>
 <p>Most moderation Discord bots lock certain features to certain individuals, roles or permission overrides. IgKnite currently handles permissions using roles, and to be precise, you'll have to create two roles:</p>
 <ul>
 <li><code>BotMod</code> - For moderators.</li>
 <li><code>BotAdmin</code> - For administratiors.</li>
 </ul>
-<p>These two roles will help unlock and trigger certain moderation commands for the people you choose to give these roles to. Make sure to carefully select and append the roles. IgKnite doesn't really need much more setup than this!</p>
-<br>
+<p>These two roles will help unlock and trigger certain moderation commands for the people you choose to give these roles to. Make sure to carefully select and append the roles. IgKnite doesn't really need much more setup than this! <br></p>
 <h2 id="using-the-commands"><a class="header" href="#using-the-commands">Using the commands</a></h2>
 <p>This step is quite familiar to those who are already using Discord bots with slash commands out there. But for those who still don't know, you will need only one prefix key to access all the slash commands for the bots on your server. </p>
 <ul>
@@ -216,7 +212,6 @@
 <div style="break-before: page; page-break-before: always;"></div><h1 id="hosting"><a class="header" href="#hosting">Hosting</a></h1>
 <p>This chapter explains how you can self-host IgKnite on your local machine. It covers everything from setting up the credentials for the project, to eventually exploring two different methods of running IgKnite!</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="preparation"><a class="header" href="#preparation">Preparation</a></h1>
-<br>
 <h2 id="cloning-the-repository"><a class="header" href="#cloning-the-repository">Cloning the repository</a></h2>
 <p>Before we continue on with the upcoming procedures, let's make sure we actually have IgKnite downloaded on the machine of your choice.</p>
 <p>In order to clone IgKnite directly from <a href="https://github.com/">GitHub</a>, make sure you have <a href="https://www.git-scm.com">Git</a> installed. Then, run the following command:</p>
@@ -229,8 +224,7 @@ $ git clone git@github.com:IgKniteDev/IgKnite.git
 # using the GitHub CLI
 $ gh repo clone IgKniteDev/IgKnite
 </code></pre>
-<p>As you can see, there are actually three different commands for you to choose from. This is typically provided by GitHub right at the repository home page, but we've written it here so you don't have to search :P</p>
-<br>
+<p>As you can see, there are actually three different commands for you to choose from. This is typically provided by GitHub right at the repository home page, but we've written it here so you don't have to search :P <br></p>
 <h2 id="creating-the-bot"><a class="header" href="#creating-the-bot">Creating the bot</a></h2>
 <p>Like actual human DIscord accounts, bots also need to be created in a rather fancy manner. If you have created Discord bots previously then this step might be familiar. If not, don't worry, that's what the documentation is for!</p>
 <p>If you'd like to get into more detail about this topic, kindly check out <a href="">this article from Discord</a> which explores how to create, add and manage a Discord bot from scratch. But if you're more impatient, you can follow along the short path given below. Note that this might get a little misleading for some people:</p>
@@ -239,8 +233,7 @@ $ gh repo clone IgKniteDev/IgKnite
 <li>Create a new application.</li>
 <li>Choose <strong>Bots</strong> from the sidebar and enable it.</li>
 </ul>
-<p>That's it! You now have a new Discord bot; ready to be online. </p>
-<br>
+<p>That's it! You now have a new Discord bot; ready to be online. <br></p>
 <p>But this bot is still not in your server. In order to add the bot to your personal Discord server or have a friend use it:</p>
 <ul>
 <li>
@@ -257,10 +250,9 @@ $ gh repo clone IgKniteDev/IgKnite
 <p>Copy the link generated below and open it in a new tab.</p>
 </li>
 <li>
-<p>Choose your server, fill in the CAPTCHA and voila!</p>
+<p>Choose your server, fill in the CAPTCHA and voila! <br></p>
 </li>
 </ul>
-<br>
 <h2 id="getting-the-files-ready"><a class="header" href="#getting-the-files-ready">Getting the files ready</a></h2>
 <p>If you've followed the preparation step given right at the start of this chapter, you should already have IgKnite cloned onto your computer. Let's open the downloaded folder using:</p>
 <pre><code class="language-bash"># Open and list all the files.
@@ -269,9 +261,8 @@ $ cd IgKnite &amp;&amp; ls
 <p>You'll see a bunch of file names appearing on your terminal. One of them is <code>.env.sample</code> and your very first steps will be to:</p>
 <ul>
 <li>Rename <code>.env.sample</code> to <code>.env</code> and save.</li>
-<li>Open the renamed file with your favorite code editor.</li>
+<li>Open the renamed file with your favorite code editor. <br></li>
 </ul>
-<br>
 <h2 id="knowing-the-secrets"><a class="header" href="#knowing-the-secrets">Knowing the secrets</a></h2>
 <p>The file you just renamed and opened is the primary file where you'll be storing all the credentials and secrets. This is called a local environment file and we, as developers, see a ton of these every day. </p>
 <p>We're assuming you're seeing something similar to this on your code editor:</p>
@@ -280,8 +271,7 @@ DISCORD_OWNER_ID=
 SPOTIFY_CLIENT_ID=
 SPOTIFY_CLIENT_SECRET=
 </code></pre>
-<p>These are the four environment variables which are all mandatory for running IgKnite. Two of them can be obtained from the <a href="https://discord.com/developers">Discord Developer Portal</a> and the other two from <a href="https://developer.spotify.com/">Spotify for Developers</a> respectively.</p>
-<br>
+<p>These are the four environment variables which are all mandatory for running IgKnite. Two of them can be obtained from the <a href="https://discord.com/developers">Discord Developer Portal</a> and the other two from <a href="https://developer.spotify.com/">Spotify for Developers</a> respectively. <br></p>
 <h2 id="getting-the-environment-variables"><a class="header" href="#getting-the-environment-variables">Getting the environment variables</a></h2>
 <p>Now we can actually go and fetch all the secrets we need. If you've previously created a Discord bot then you already know how to obtain the first two variables. If not, don't worry, that's what the documentation is for.</p>
 <ul>
@@ -297,24 +287,20 @@ SPOTIFY_CLIENT_SECRET=
 <li>Navigate to the [Spotify for Developers] web page.</li>
 <li>Choose <strong>Dashboard</strong> from the top bar and click on 'Create an App'.</li>
 <li>Copy the <strong>Client ID</strong> from the app's window and paste it inside the <code>SPOTIFY_CLIENT_ID</code> variable.</li>
-<li>Similarly, copy the <strong>Client Secret</strong> and paste it inside the <code>SPOTIFY_CLIENT_SECRETS</code> variable.</li>
+<li>Similarly, copy the <strong>Client Secret</strong> and paste it inside the <code>SPOTIFY_CLIENT_SECRETS</code> variable. <br></li>
 </ul>
-<br>
 <p>That's basically it! Now we are fully ready to run IgKnite.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="the-docker-way"><a class="header" href="#the-docker-way">The Docker Way</a></h1>
-<p>The first and easiest way of self-hosting IgKnite is by using <a href="https://docker.com/">Docker</a>. For those who don't know, Docker basically uses <strong>containers and images</strong> to virtualize an entire operating system within another. This way, you don't need to worry about your applications failing on other platforms if it works on your own machine. Interesting, right?</p>
-<br>
+<p>The first and easiest way of self-hosting IgKnite is by using <a href="https://docker.com/">Docker</a>. For those who don't know, Docker basically uses <strong>containers and images</strong> to virtualize an entire operating system within another. This way, you don't need to worry about your applications failing on other platforms if it works on your own machine. Interesting, right? <br></p>
 <h2 id="getting-familiar"><a class="header" href="#getting-familiar">Getting familiar</a></h2>
 <p>Previously, we ran a command to open and list all the files within IgKnite's directory. Let's run the command again in a new terminal window if you have closed the previous one:</p>
 <pre><code class="language-bash"># Open and list all the files.
 $ cd IgKnite &amp;&amp; ls
 </code></pre>
-<p>Notice something? Even if you don't, most Docker uses have already noticed a <code>Dockerfile</code> within the directory. This file works as a blueprint for building Docker images.</p>
-<br>
+<p>Notice something? Even if you don't, most Docker uses have already noticed a <code>Dockerfile</code> within the directory. This file works as a blueprint for building Docker images. <br></p>
 <h2 id="preparing"><a class="header" href="#preparing">Preparing</a></h2>
 <p>This time, your very first step will be to install <a href="https://docker.com/">Docker</a> onto your computer. If you are a developer or a DevOps engineer, there's a high probability that you already have it :P</p>
-<p>Once installed, open it and follow along with the additional setup procedures thrown by the app. This would be a great time to learn about Docker by watching <a href="https://www.youtube.com/watch?v=gAkwW2tuIqE&amp;t=338s">this 100-seconds video</a> made by Fireship if you already don't use this awesome tool as a developer.</p>
-<br>
+<p>Once installed, open it and follow along with the additional setup procedures thrown by the app. This would be a great time to learn about Docker by watching <a href="https://www.youtube.com/watch?v=gAkwW2tuIqE&amp;t=338s">this 100-seconds video</a> made by Fireship if you already don't use this awesome tool as a developer. <br></p>
 <h2 id="building"><a class="header" href="#building">Building</a></h2>
 <p>Let's prepare a new Docker image for IgKnite. Make sure you restart your terminal and <code>cd</code> into IgKnite's directory again. Also make sure that you have a stable internet connection. Then, you can type:</p>
 <pre><code class="language-bash">$ docker build -t igknite .
@@ -324,28 +310,24 @@ $ cd IgKnite &amp;&amp; ls
 </code></pre>
 <ul>
 <li>The <code>--env-file</code> flag specifies the path to the <code>.env</code> file we had accessed previously. This can vary depending on where you have put the actual file. For example, if the file is in a different subdirectory named <code>env</code> then <code>env/.env</code> would be the path inside the root directory of the project.</li>
-<li>The tag name is specified using the <code>igknite</code> parameter at the end.</li>
+<li>The tag name is specified using the <code>igknite</code> parameter at the end. <br></li>
 </ul>
-<br>
 <h2 id="enjoy"><a class="header" href="#enjoy">Enjoy!</a></h2>
 <p>If you have followed the given steps correctly, you should see your bot coming online within a few moments of command execution.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="the-manual-way"><a class="header" href="#the-manual-way">The Manual Way</a></h1>
-<p>If you're not into <a href="https://docker.com/">Docker</a> or you'd like to set up IgKnite for coding on it, this is the perfect place to get your hands dirty and run IgKnite with full manual management on the dependencies.</p>
-<br>
+<p>If you're not into <a href="https://docker.com/">Docker</a> or you'd like to set up IgKnite for coding on it, this is the perfect place to get your hands dirty and run IgKnite with full manual management on the dependencies. <br></p>
 <h2 id="preparation-1"><a class="header" href="#preparation-1">Preparation</a></h2>
 <p>Unlike the Docker setup method, this one requires a fair bit of dependencies to be installed beforehand.</p>
 <ul>
 <li>You will need a <a href="https://www.python.org/downloads/">Python</a> installation of <strong>version 3.10 or higher.</strong></li>
 <li>You will need a native installation of <a href="https://www.python.org/downloads/">ffmpeg</a> for running music commands.</li>
 </ul>
-<p>For now we'll only set up these two, but later we'll install more using a package manager.</p>
-<br>
+<p>For now we'll only set up these two, but later we'll install more using a package manager. <br></p>
 <h2 id="installation"><a class="header" href="#installation">Installation</a></h2>
 <p>Let's navigate to the directory where IgKnite resides, using the previous command:</p>
 <pre><code class="language-bash">$ cd IgKnite
 </code></pre>
-<p>Now that we're in, it's time to set up a <a href="">virtual environment</a> for Python. Since we don't want to get our hard drives dirty in the process of running the project, we'll use such environments to centralize all of the Python packages inside the directory.</p>
-<br>
+<p>Now that we're in, it's time to set up a <a href="">virtual environment</a> for Python. Since we don't want to get our hard drives dirty in the process of running the project, we'll use such environments to centralize all of the Python packages inside the directory. <br></p>
 <p>We'll be using the <a href="">venv</a> shell script provided built-in with Python like this:</p>
 <pre><code class="language-bash"># creating the environment
 $ python3 -m venv ourenv
@@ -353,8 +335,7 @@ $ python3 -m venv ourenv
 # activating it
 $ source ourenv/bin/activate
 </code></pre>
-<p>The following command will create a new folder named <code>ourenv</code> within IgKnite's project directory. This folder will contain all of the packages and symlinks we need. </p>
-<br>
+<p>The following command will create a new folder named <code>ourenv</code> within IgKnite's project directory. This folder will contain all of the packages and symlinks we need. <br></p>
 <p>Once done, we can install the required Python packages using <a href="">pip</a>:</p>
 <pre><code class="language-bash"># the -r flag specifies a file path
 $ python3 -m pip install -r requirements.txt
@@ -365,6 +346,141 @@ $ python3 -m pip install -r requirements.txt
 <pre><code class="language-bash">$ python3 main.py
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="development-setup"><a class="header" href="#development-setup">Development Setup</a></h1>
+<p>For those who'd like to add new features to IgKnite using code, low-code or even non-code contributions, this is the perfect chapter to follow along. <br></p>
+<h2 id="preparation-2"><a class="header" href="#preparation-2">Preparation</a></h2>
+<p>The <a href="./hosting_preparation.html"><strong>preparation for hosting</strong></a> sub-chapter discusses the primary ways to self-host IgKnite on your local machine. Make sure to read and apply the contents of it properly and then continue reading towards the <a href="./hosting_manual.html"><strong>manual hosting</strong></a> sub-chapter as well to set up all of the necessary dependencies. <br></p>
+<h2 id="code-style"><a class="header" href="#code-style">Code Style</a></h2>
+<p>This project uses the <a href="https://flake8.pycqa.org">flake8</a> linter for Python and necessary configuration files have also been set up within the repository to support it. <a href="https://github.com/features/actions">GitHub Actions</a> workflows have been added as well to enforce development with it. </p>
+<p>Setting up the linter is as easy as just running one command:</p>
+<pre><code class="language-bash"># installation
+$ python3 -m pip install flake8
+
+# running
+$ python3 -m flake8 .
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="adding-commands"><a class="header" href="#adding-commands">Adding commands</a></h1>
+<p>Have an idea? Let's build it! <br></p>
+<h2 id="note"><a class="header" href="#note">Note</a></h2>
+<p>It's noteworthy that your contributions must follow the <a href="https://github.com/IgKniteDev/IgKnite/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a> included with the repository. Make sure to read it before creating any unnecessary changes within the code. We'd love to see your ideas come to life within IgKnite! <br></p>
+<h2 id="the-steps"><a class="header" href="#the-steps">The Steps</a></h2>
+<p>In order to add new commands to the project, you must follow through the three mandatory steps mentioned below: <br></p>
+<h3 id="1-choosing-a-cog"><a class="header" href="#1-choosing-a-cog">1. Choosing a &quot;Cog&quot;</a></h3>
+<p>On both <a href="https://github.com/Rapptz/discord.py">discord.py</a> and <a href="https://github.com/DisnakeDev/disnake">disnake</a>, categories of commands are referred to as &quot;cogs&quot;. There are six different cogs which come built-in with IgKnite located in the <strong>cogs</strong> subdirectory. Navigate to your chosen one and have a look at the source code before making any changes. <br></p>
+<h3 id="2-creating-the-command"><a class="header" href="#2-creating-the-command">2. Creating the command</a></h3>
+<p>Once you have decided which cog to add your command to, we can start writing some code now!</p>
+<p>Discord has three types of commands:</p>
+<ul>
+<li><strong>Slash commands</strong> can be used by pressing <code>/</code> and then typing the command.</li>
+<li><strong>User commands</strong> can be used by right-clicking on a user's avatar and then selecting 'Apps'.</li>
+<li><strong>Message commands</strong> are similar to user commands but need you to click on a message instead of someone's avatar.</li>
+</ul>
+<p>Below is an example of a very basic slash command which greets a server member. You'll be using such syntax in most of your commands.</p>
+<pre><code class="language-python">class SomeCog(commands.Cog):
+
+...
+
+	@commands.slash_command(
+		name='greet',
+		description='Greets a member!',
+		options=[
+			Option(
+				'member',
+				'Mention the server member.',
+				OptionType.user, # disnake.OptionType
+				required=True # not needed if False
+			)
+		],
+		dm_permission=False # cannot be used in DMs
+	)
+	async def _greet(
+		self,
+		inter: disnake.CommandInteraction,
+		member: disnake.Member
+	) -&gt; None:
+		await member.send(
+			f'Hey there! Welcome to {inter.guild.name}.'
+		)
+</code></pre>
+<br>
+<p>On the other hand, you can also write code and deploy to all three types of commands at once! In the example given below, we've tried to make a ban command that uses the very same logic for deploying itself in three forms:</p>
+<pre><code class="language-python"># Backend for ban-labelled commands.
+# Do not use it within other commands unless really necessary.
+
+async def _ban_backend(
+	self,
+	inter: disnake.CommandInteraction,
+	member: disnake.Member,
+	reason: str = 'No reason provided.'
+) -&gt; None:
+	await inter.guild.ban(
+		member,
+		reason=reason
+	)
+	await inter.send(f'Member **{member.display_name}** has been banned! Reason: {reason}')
+
+
+# ban (slash)
+@commands.slash_command(
+	name='ban',
+	description='Bans a member.',
+	options=[
+		Option(
+			'member',
+			'Mention the server member.',
+			OptionType.user,
+			required=True
+		),
+		Option(
+			'reason',
+			'Give a reason for the softban.',
+			OptionType.string
+		)
+	],
+	dm_permission=False
+)
+@commands.has_any_role(LockRoles.mod, LockRoles.admin)
+async def _ban(
+	self,
+	inter: disnake.CommandInteraction,
+	member: disnake.Member,
+	reason: str = 'No reason provided.'
+) -&gt; None:
+	await self._ban_backend(inter, member, reason=reason)
+
+
+# ban (user)
+@commands.user_command(
+	name='Ban',
+	dm_permission=False
+)
+@commands.has_any_role(LockRoles.mod, LockRoles.admin)
+async def _ban_user(
+	self,
+	inter: disnake.CommandInteraction,
+	member: disnake.Member
+) -&gt; None:
+	await self._ban_backend(inter, member)
+
+
+# ban (message)
+@commands.message_command(
+	name='Ban',
+	dm_permission=False
+)
+@commands.has_any_role(LockRoles.mod, LockRoles.admin)
+async def _ban_message(
+	self,
+	inter: disnake.CommandInteraction,
+	message: disnake.Message
+) -&gt; None:
+	await self._ban_backend(inter, message.author)
+
+...
+</code></pre>
+<br>
+<h3 id="3-test-and-deploy"><a class="header" href="#3-test-and-deploy">3. Test and deploy</a></h3>
+<p>Once you are done making your changes, push them to your fork and create a valid pull request. <a href="https://github.com/IgKniteDev/IgKnite/pull/36">Here's</a> an example pull request which you can have a look at to learn about the pattern.</p>
+<p>The pull request must pass the given workflows (the ones mentioned earlier) and receive a green 'check' symbol to qualify for a merge. We hope you'll do your best to gain it!</p>
 
                     </main>
 
@@ -383,22 +499,6 @@ $ python3 -m pip install -r requirements.txt
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

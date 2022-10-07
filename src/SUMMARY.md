@@ -10,3 +10,4 @@
 	- [The Docker Way](./hosting_docker.md)
 	- [The Manual Way](./hosting_manual.md)
 - [Development Setup](./development.md)
+	- [Adding commands](./development_command.md)
