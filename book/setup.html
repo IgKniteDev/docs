@@ -81,7 +81,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="setup.html" class="active"><strong aria-hidden="true">2.</strong> Setup</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="setup_add_to_server.html"><strong aria-hidden="true">2.1.</strong> Adding to Server</a></li><li class="chapter-item expanded "><a href="setup_post.html"><strong aria-hidden="true">2.2.</strong> Post-Setup</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="setup.html" class="active"><strong aria-hidden="true">2.</strong> Setup</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="setup_add_to_server.html"><strong aria-hidden="true">2.1.</strong> Adding to Server</a></li><li class="chapter-item expanded "><a href="setup_next_steps.html"><strong aria-hidden="true">2.2.</strong> Next steps</a></li></ol></li><li class="chapter-item expanded "><a href="hosting.html"><strong aria-hidden="true">3.</strong> Hosting</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="hosting_preparation.html"><strong aria-hidden="true">3.1.</strong> Preparation</a></li><li class="chapter-item expanded "><a href="hosting_docker.html"><strong aria-hidden="true">3.2.</strong> The Docker Way</a></li><li class="chapter-item expanded "><a href="hosting_manual.html"><strong aria-hidden="true">3.3.</strong> The Manual Way</a></li></ol></li><li class="chapter-item expanded "><a href="development.html"><strong aria-hidden="true">4.</strong> Development Setup</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -146,7 +146,7 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="setup"><a class="header" href="#setup">Setup</a></h1>
-<p>This chapter of the documentation explains how to add IgKnite to your Discord server using two different authentication methods. It also helps you afterwards by explaining how permissions are handled for commands.</p>
+<p>This chapter of the documentation explains how to add IgKnite to your Discord server using two different authentication methods. It also explains how permissions are handled to lock certain commands within IgKnite later on, so that you can properly utilize the full power of the project!</p>
 
                     </main>
 
@@ -177,6 +177,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

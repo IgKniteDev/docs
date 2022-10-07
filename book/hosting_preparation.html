@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Overview - IgKnite</title>
+        <title>Preparation - IgKnite</title>
 
 
         <!-- Custom HTML head -->
@@ -81,7 +81,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="overview.html" class="active"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="setup.html"><strong aria-hidden="true">2.</strong> Setup</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="setup_add_to_server.html"><strong aria-hidden="true">2.1.</strong> Adding to Server</a></li><li class="chapter-item expanded "><a href="setup_next_steps.html"><strong aria-hidden="true">2.2.</strong> Next steps</a></li></ol></li><li class="chapter-item expanded "><a href="hosting.html"><strong aria-hidden="true">3.</strong> Hosting</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="hosting_preparation.html"><strong aria-hidden="true">3.1.</strong> Preparation</a></li><li class="chapter-item expanded "><a href="hosting_docker.html"><strong aria-hidden="true">3.2.</strong> The Docker Way</a></li><li class="chapter-item expanded "><a href="hosting_manual.html"><strong aria-hidden="true">3.3.</strong> The Manual Way</a></li></ol></li><li class="chapter-item expanded "><a href="development.html"><strong aria-hidden="true">4.</strong> Development Setup</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="setup.html"><strong aria-hidden="true">2.</strong> Setup</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="setup_add_to_server.html"><strong aria-hidden="true">2.1.</strong> Adding to Server</a></li><li class="chapter-item expanded "><a href="setup_next_steps.html"><strong aria-hidden="true">2.2.</strong> Next steps</a></li></ol></li><li class="chapter-item expanded "><a href="hosting.html"><strong aria-hidden="true">3.</strong> Hosting</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="hosting_preparation.html" class="active"><strong aria-hidden="true">3.1.</strong> Preparation</a></li><li class="chapter-item expanded "><a href="hosting_docker.html"><strong aria-hidden="true">3.2.</strong> The Docker Way</a></li><li class="chapter-item expanded "><a href="hosting_manual.html"><strong aria-hidden="true">3.3.</strong> The Manual Way</a></li></ol></li><li class="chapter-item expanded "><a href="development.html"><strong aria-hidden="true">4.</strong> Development Setup</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -145,30 +145,102 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="overview"><a class="header" href="#overview">Overview</a></h1>
-<h2 id="what-is-a-bot"><a class="header" href="#what-is-a-bot">What is a bot?</a></h2>
-<p>IgKnite, like many other Discord applications, is a <strong>bot.</strong> Being a bot on Discord mostly means using the endpoints provided by it via its API (Application Programming Interface) to do some action. There are tons of options to choose from, in this case. <a href=""><strong>MEE6</strong></a>, <a href=""><strong>Fredboat</strong></a>, <a href=""><strong>PokeTwo</strong></a> - these are some of the most popular bots that you can access.</p>
+                        <h1 id="preparation"><a class="header" href="#preparation">Preparation</a></h1>
 <br>
-<h2 id="why-igknite"><a class="header" href="#why-igknite">Why IgKnite?</a></h2>
-<p>IgKnite, unlike most other Discord bots, is <a href=""><strong>open-source</strong></a>, meaning that all of the aspects of it is open to and maintained by, (yes you guessed it) the community!</p>
-<p>IgKnite is also built on top off Discord's bleeding-edge API changes including <strong>slash commands</strong>, resulting in an interaction method that doesn't include text commands at all. This also means that you will never have the hassle to type in a prefix and then making sure that your command is written perfectly. IgKnite also contains interaction methods like message / user commands which, for most of the time, do not even require you to type anything!</p>
+<h2 id="cloning-the-repository"><a class="header" href="#cloning-the-repository">Cloning the repository</a></h2>
+<p>Before we continue on with the upcoming procedures, let's make sure we actually have IgKnite downloaded on the machine of your choice.</p>
+<p>In order to clone IgKnite directly from <a href="https://github.com/">GitHub</a>, make sure you have <a href="https://www.git-scm.com">Git</a> installed. Then, run the following command:</p>
+<pre><code class="language-bash"># using HTTPS
+$ git clone https://github.com/IgKniteDev/IgKnite.git
+
+# using SSH
+$ git clone git@github.com:IgKniteDev/IgKnite.git
+
+# using the GitHub CLI
+$ gh repo clone IgKniteDev/IgKnite
+</code></pre>
+<p>As you can see, there are actually three different commands for you to choose from. This is typically provided by GitHub right at the repository home page, but we've written it here so you don't have to search :P</p>
 <br>
-<h2 id="why-this-guide"><a class="header" href="#why-this-guide">Why this guide?</a></h2>
-<p>While the README.md file might not be enough to guide you through the setup phase and the different use cases of IgKnite, this documentation can help you in the initial run. It contains all the necessary information to:</p>
+<h2 id="creating-the-bot"><a class="header" href="#creating-the-bot">Creating the bot</a></h2>
+<p>Like actual human DIscord accounts, bots also need to be created in a rather fancy manner. If you have created Discord bots previously then this step might be familiar. If not, don't worry, that's what the documentation is for!</p>
+<p>If you'd like to get into more detail about this topic, kindly check out <a href="">this article from Discord</a> which explores how to create, add and manage a Discord bot from scratch. But if you're more impatient, you can follow along the short path given below. Note that this might get a little misleading for some people:</p>
 <ul>
-<li>Add IgKnite to your Discord server</li>
-<li>Self-host the project on your own machine</li>
-<li>Learn about how things are operated under the hood</li>
+<li>Navigate to <a href="https://discord.com/developers">Discord Developer Portal</a>.</li>
+<li>Create a new application.</li>
+<li>Choose <strong>Bots</strong> from the sidebar and enable it.</li>
+</ul>
+<p>That's it! You now have a new Discord bot; ready to be online. </p>
+<br>
+<p>But this bot is still not in your server. In order to add the bot to your personal Discord server or have a friend use it:</p>
+<ul>
+<li>
+<p>Choose <strong>OAuth2</strong> from the sidebar and choose <strong>URL Generator</strong>.</p>
+</li>
+<li>
+<p>Click on <code>bot</code> and <code>application.commands</code> from the scopes view.</p>
+</li>
+<li>
+<p>Make sure you have these permissions ticked:</p>
+  <img src='static/permissions.png' alt='Permissions'>
+</li>
+<li>
+<p>Copy the link generated below and open it in a new tab.</p>
+</li>
+<li>
+<p>Choose your server, fill in the CAPTCHA and voila!</p>
+</li>
 </ul>
 <br>
-<p>We hope that you will have a lot of fun using IgKnite and that's why we'll leave the post-documentation stuff to you. After all, exploration is a lot more enjoyable than reading.</p>
+<h2 id="getting-the-files-ready"><a class="header" href="#getting-the-files-ready">Getting the files ready</a></h2>
+<p>If you've followed the preparation step given right at the start of this chapter, you should already have IgKnite cloned onto your computer. Let's open the downloaded folder using:</p>
+<pre><code class="language-bash"># Open and list all the files.
+$ cd IgKnite &amp;&amp; ls
+</code></pre>
+<p>You'll see a bunch of file names appearing on your terminal. One of them is <code>.env.sample</code> and your very first steps will be to:</p>
+<ul>
+<li>Rename <code>.env.sample</code> to <code>.env</code> and save.</li>
+<li>Open the renamed file with your favorite code editor.</li>
+</ul>
+<br>
+<h2 id="knowing-the-secrets"><a class="header" href="#knowing-the-secrets">Knowing the secrets</a></h2>
+<p>The file you just renamed and opened is the primary file where you'll be storing all the credentials and secrets. This is called a local environment file and we, as developers, see a ton of these every day. </p>
+<p>We're assuming you're seeing something similar to this on your code editor:</p>
+<pre><code>DISCORD_TOKEN=
+DISCORD_OWNER_ID=
+SPOTIFY_CLIENT_ID=
+SPOTIFY_CLIENT_SECRET=
+</code></pre>
+<p>These are the four environment variables which are all mandatory for running IgKnite. Two of them can be obtained from the <a href="https://discord.com/developers">Discord Developer Portal</a> and the other two from <a href="https://developer.spotify.com/">Spotify for Developers</a> respectively.</p>
+<br>
+<h2 id="getting-the-environment-variables"><a class="header" href="#getting-the-environment-variables">Getting the environment variables</a></h2>
+<p>Now we can actually go and fetch all the secrets we need. If you've previously created a Discord bot then you already know how to obtain the first two variables. If not, don't worry, that's what the documentation is for.</p>
+<ul>
+<li>Navigate to the <a href="https://discord.com/developers">Discord Developer Portal</a> web page.</li>
+<li>Click on the application we had created previously.</li>
+<li>Choose <strong>Bots</strong> from the sidebar. </li>
+<li>Copy the token.</li>
+<li>Paste it inside the <code>DISCORD_TOKEN</code> variable.</li>
+</ul>
+<p>That's one done! If you'd like to obtain the other environment variable originating from Discord, then that's pretty easy too. You'll just have to copy and paste the ID of your Discord account in the field.</p>
+<p>Speaking of the variables related to Spotify, those are relatively easy to get as well. To get the rest of the required secrets:</p>
+<ul>
+<li>Navigate to the [Spotify for Developers] web page.</li>
+<li>Choose <strong>Dashboard</strong> from the top bar and click on 'Create an App'.</li>
+<li>Copy the <strong>Client ID</strong> from the app's window and paste it inside the <code>SPOTIFY_CLIENT_ID</code> variable.</li>
+<li>Similarly, copy the <strong>Client Secret</strong> and paste it inside the <code>SPOTIFY_CLIENT_SECRETS</code> variable.</li>
+</ul>
+<br>
+<p>That's basically it! Now we are fully ready to run IgKnite.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="hosting.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
 
-                            <a rel="next" href="setup.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="hosting_docker.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -178,8 +250,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="hosting.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
 
-                    <a rel="next" href="setup.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="hosting_docker.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
