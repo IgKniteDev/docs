@@ -143,6 +143,13 @@ Shows all important information related to a specific role.
 ### /play [keyword]
 Searches a soundtrack with the given *keyword* and adds it to the queue.
 
+### /playrich [member]
+Tries to enqueue a song from one's Spotify rich presence.
+
+| Parameter | Required | Default |
+|---|---|---|
+| member | No | You |
+
 ### /pause
 Pauses the currently playing song.
 
