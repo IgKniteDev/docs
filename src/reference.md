@@ -129,8 +129,6 @@ Sends a message to the specified member's DM.
 ### /guildinfo
 Shows all important information about the server.
 
-![/guildinfo demonstration](static/dem_guildinfo.png)
-
 ### /userinfo [member]
 Shows all important information on a user.
 
@@ -138,18 +136,12 @@ Shows all important information on a user.
 |---|---|---|
 | member | No | You |
 
-![/userinfo demonstration](static/dem_userinfo.png)
-
 ### /roleinfo [role]
 Shows all important information related to a specific role.
-
-![/roleinfo demonstration](static/dem_roleinfo.png)
 
 ## The Music Commands
 ### /play [keyword]
 Searches a soundtrack with the given *keyword* and adds it to the queue.
-
-![/play demonstration](static/dem_play.png)
 
 ### /pause
 Pauses the currently playing song.
@@ -172,15 +164,11 @@ Sets the volume of the playing song. Just say `/volume 50`.
 ### /now
 Displays an interactive control view for the current song.
 
-![/now demonstration](static/dem_now.png)
-
 ### /skip
 Vote to skip a song. The requester can automatically skip.
 
 ### /queue
 Shows the player's queue.
-
-![/queue demonstration](static/dem_queue.png)
 
 ### /rmqueue [index]
 Removes a song from the queue at a given *index*.
