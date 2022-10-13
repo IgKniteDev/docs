@@ -300,20 +300,15 @@ $ cd IgKnite &amp;&amp; ls
 <p>Notice something? Even if you don't, most Docker uses have already noticed a <code>Dockerfile</code> within the directory. This file works as a blueprint for building Docker images. <br></p>
 <h2 id="preparing"><a class="header" href="#preparing">Preparing</a></h2>
 <p>This time, your very first step will be to install <a href="https://docker.com/">Docker</a> onto your computer. If you are a developer or a DevOps engineer, there's a high probability that you already have it :P</p>
-<p>Once installed, open it and follow along with the additional setup procedures thrown by the app. This would be a great time to learn about Docker by watching <a href="https://www.youtube.com/watch?v=gAkwW2tuIqE&amp;t=338s">this 100-seconds video</a> made by Fireship if you already don't use this awesome tool as a developer. <br></p>
+<p>Once installed, open it and follow along with the additional setup procedures thrown by the app. This would be a great time to learn about Docker by watching <a href="https://www.youtube.com/watch?v=gAkwW2tuIqE&amp;t=338s">this 100-seconds video</a> made by Fireship if you already don't use this awesome tool as a developer.</p>
+<p>You'll also need <a href="https://docs.docker.com/compose/">Docker Compose</a> to run IgKnite. For Windows and macOS, it comes bundled with the original Docker package. However, you'll have to install it separately on Linux distributions. <br></p>
 <h2 id="building"><a class="header" href="#building">Building</a></h2>
-<p>Let's prepare a new Docker image for IgKnite. Make sure you restart your terminal and <code>cd</code> into IgKnite's directory again. Also make sure that you have a stable internet connection. Then, you can type:</p>
-<pre><code class="language-bash">$ docker build -t igknite .
+<p>Run the docker daemon and then type the following command in your terminal:</p>
+<pre><code class="language-bash"># It's this easy!
+docker-compose up
 </code></pre>
-<p>This will create a new Docker image with the <code>igknite</code> tag. It might take some time to prepare all the dependencies and install them. Once done, run the image in a container using:</p>
-<pre><code class="language-bash">$ docker run --env-file .env igknite
-</code></pre>
-<ul>
-<li>The <code>--env-file</code> flag specifies the path to the <code>.env</code> file we had accessed previously. This can vary depending on where you have put the actual file. For example, if the file is in a different subdirectory named <code>env</code> then <code>env/.env</code> would be the path inside the root directory of the project.</li>
-<li>The tag name is specified using the <code>igknite</code> parameter at the end. <br></li>
-</ul>
 <h2 id="enjoy"><a class="header" href="#enjoy">Enjoy!</a></h2>
-<p>If you have followed the given steps correctly, you should see your bot coming online within a few moments of command execution.</p>
+<p>You should now see logs appearing on your terminal window, eventually displaying the total number of shards and servers IgKnite is connected to. This means you've officially self-hosted IgKnite with Docker!</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="the-manual-way"><a class="header" href="#the-manual-way">The Manual Way</a></h1>
 <p>If you're not into <a href="https://docker.com/">Docker</a> or you'd like to set up IgKnite for coding on it, this is the perfect place to get your hands dirty and run IgKnite with full manual management on the dependencies. <br></p>
 <h2 id="preparation-1"><a class="header" href="#preparation-1">Preparation</a></h2>
@@ -482,7 +477,7 @@ async def _ban_message(
 <p>Once you are done making your changes, push them to your fork and create a valid pull request. <a href="https://github.com/IgKniteDev/IgKnite/pull/36">Here's</a> an example pull request which you can have a look at to learn about the pattern.</p>
 <p>The pull request must pass the given workflows (the ones mentioned earlier) and receive a green 'check' symbol to qualify for a merge. We hope you'll do your best to gain it!</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="command-reference"><a class="header" href="#command-reference">Command Reference</a></h1>
-<p>IgKnite currentry has a total of 3 available bot commands, roughly distributed among four categories. All the commands are built on Discord's bleeding edge API and use the latest features.</p>
+<p>IgKnite currentry has a total of 37 available bot commands, roughly distributed among four categories. All the commands are built on Discord's bleeding edge API and use the latest features.</p>
 <p>The following is a list of all the available commands (updated: October 13, 2022).</p>
 <h2 id="the-customization-commands"><a class="header" href="#the-customization-commands">The Customization Commands</a></h2>
 <h3 id="makerole-name"><a class="header" href="#makerole-name">/makerole [name]</a></h3>
