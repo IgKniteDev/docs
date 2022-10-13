@@ -1,6 +1,6 @@
 # Command Reference
 
-IgKnite currentry has a total of 3 available bot commands, roughly distributed among four categories. All the commands are built on Discord's bleeding edge API and use the latest features.
+IgKnite currentry has a total of 37 available bot commands, roughly distributed among four categories. All the commands are built on Discord's bleeding edge API and use the latest features.
 
 The following is a list of all the available commands (updated: October 13, 2022).
 
