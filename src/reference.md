@@ -1,6 +1,6 @@
 # Command Reference
 
-IgKnite currentry has a total of 36 available bot commands, roughly distributed among four categories. All the commands are built on Discord's bleeding edge API and use the latest features.
+IgKnite currentry has a total of 37 available bot commands, roughly distributed among four categories. All the commands are built on Discord's bleeding edge API and use the latest features.
 
 The following is a list of all the available commands (updated: October 13, 2022).
 
@@ -62,7 +62,7 @@ Displays your avatar or the avatar of the server *member* given.
 | member | No | You |
 
 ### /ping
-Shows your API response time, system latency, and uptime.
+Returns IgKnite's API response time, system latency, and uptime.
 
 
 ## The Moderation Commands
@@ -117,18 +117,19 @@ Clears the messages sent by the given *member* if they fall in the given *index/
 ### /snipe
 Recovers all the messages that were deleted/*sniped* in the last 25 seconds. *Neat, right?*
 
+### /senddm [member] [msg]
+Sends a message to the specified member's DM.
+
+| Parameter | Required | Default |
+|---|---|---|
+| member | Yes | None|
+| msg | Yes | None|
+
 ## The Inspection Commands
 ### /guildinfo
 Shows all important information about the server.
-The current stats include:
 
-    - The creation date of the server
-    - Server owner
-    - Number of members
-    - Number of roles in the server
-    - Number of channels
-    - Identifier (server/guild ID)
-    - Server poster
+![/guildinfo demonstration](static/dem_guildinfo.png)
 
 ### /userinfo [member]
 Shows all important information on a user.
@@ -137,24 +138,18 @@ Shows all important information on a user.
 |---|---|---|
 | member | No | You |
 
-The current stats include:
-
-    - Status
-    - Server join time
-    - If on mobile
-    - Bot or Human
-    - Number of roles
-    - Highest role
-    - Identifier (server/guild ID)
-    - Server poster
+![/userinfo demonstration](static/dem_userinfo.png)
 
 ### /roleinfo [role]
 Shows all important information related to a specific role.
 
+![/roleinfo demonstration](static/dem_roleinfo.png)
 
 ## The Music Commands
 ### /play [keyword]
 Searches a soundtrack with the given *keyword* and adds it to the queue.
+
+![/play demonstration](static/dem_play.png)
 
 ### /pause
 Pauses the currently playing song.
@@ -177,24 +172,15 @@ Sets the volume of the playing song. Just say `/volume 50`.
 ### /now
 Displays an interactive control view for the current song.
 
-The stats include:
-
-    - Song name
-    - Song duration
-    - Requester
-
-The control panel has following buttons:
-
-    - Toggle loop
-    - Skip
-    - Vulume
-    - Redirect (opens the original source)
+![/now demonstration](static/dem_now.png)
 
 ### /skip
 Vote to skip a song. The requester can automatically skip.
 
 ### /queue
 Shows the player's queue.
+
+![/queue demonstration](static/dem_queue.png)
 
 ### /rmqueue [index]
 Removes a song from the queue at a given *index*.
