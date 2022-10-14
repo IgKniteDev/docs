@@ -26,8 +26,14 @@ You'll also need [Docker Compose](https://docs.docker.com/compose/) to run IgKni
 Run the docker daemon and then type the following command in your terminal:
 
 ```bash
-# It's this easy!
-docker-compose up
+# building the image
+$ docker-compose build
+
+# running it
+$ docker-compose up
+
+# list running containers
+$ docker ps --all
 ```
 
 ## Enjoy!

@@ -159,8 +159,14 @@ $ cd IgKnite &amp;&amp; ls
 <p>You'll also need <a href="https://docs.docker.com/compose/">Docker Compose</a> to run IgKnite. For Windows and macOS, it comes bundled with the original Docker package. However, you'll have to install it separately on Linux distributions. <br></p>
 <h2 id="building"><a class="header" href="#building">Building</a></h2>
 <p>Run the docker daemon and then type the following command in your terminal:</p>
-<pre><code class="language-bash"># It's this easy!
-docker-compose up
+<pre><code class="language-bash"># building the image
+$ docker-compose build
+
+# running it
+$ docker-compose up
+
+# list running containers
+$ docker ps --all
 </code></pre>
 <h2 id="enjoy"><a class="header" href="#enjoy">Enjoy!</a></h2>
 <p>You should now see logs appearing on your terminal window, eventually displaying the total number of shards and servers IgKnite is connected to. This means you've officially self-hosted IgKnite with Docker!</p>
