@@ -2,13 +2,13 @@
 
 ## What is a bot?
 
-IgKnite, like many other Discord applications, is a **bot.** Being a bot on Discord mostly means using the endpoints provided by it via its API (Application Programming Interface) to do some action. There are tons of options to choose from, in this case. [**MEE6**](), [**Fredboat**](), [**PokeTwo**]() - these are some of the most popular bots that you can access.
+IgKnite, like many other Discord applications, is a **bot.** Being a bot on Discord mostly means using the endpoints provided by it via its API (Application Programming Interface) to do some action. There are tons of options to choose from, in this case. [**MEE6**](https://mee6.xyz), [**Fredboat**](https://fredboat.com), [**PokeTwo**](https://poketwo.net) - these are some of the most popular bots that you can access.
 
 <br>
 
 ## Why IgKnite?
 
-IgKnite, unlike most other Discord bots, is [**open-source**](), meaning that all of the aspects of it is open to and maintained by, (yes you guessed it) the community!
+IgKnite, unlike most other Discord bots, is **open-source**, meaning that all of the aspects of it is open to and maintained by, (yes you guessed it) the community!
 
 IgKnite is also built on top off Discord's bleeding-edge API changes including **slash commands**, resulting in an interaction method that doesn't include text commands at all. This also means that you will never have the hassle to type in a prefix and then making sure that your command is written perfectly. IgKnite also contains interaction methods like message / user commands which, for most of the time, do not even require you to type anything!
 
