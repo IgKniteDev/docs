@@ -54,7 +54,16 @@ $ cd IgKnite && ls
 You'll see a bunch of file names appearing on your terminal. One of them is `.env.sample` and your very first steps will be to:
 
 - Rename `.env.sample` to `.env` and save.
-- Open the renamed file with your favorite code editor. <br>
+- Open the renamed file with your favorite code editor.
+
+```bash
+# copying
+$ cp .env.sample .env
+
+# opening it within nano
+$ nano .env
+``` 
+<br>
 
 ## Knowing the secrets
 
