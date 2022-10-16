@@ -195,8 +195,15 @@ $ cd IgKnite &amp;&amp; ls
 <p>You'll see a bunch of file names appearing on your terminal. One of them is <code>.env.sample</code> and your very first steps will be to:</p>
 <ul>
 <li>Rename <code>.env.sample</code> to <code>.env</code> and save.</li>
-<li>Open the renamed file with your favorite code editor. <br></li>
+<li>Open the renamed file with your favorite code editor.</li>
 </ul>
+<pre><code class="language-bash"># copying
+$ cp .env.sample .env
+
+# opening it within nano
+$ nano .env
+</code></pre>
+<br>
 <h2 id="knowing-the-secrets"><a class="header" href="#knowing-the-secrets">Knowing the secrets</a></h2>
 <p>The file you just renamed and opened is the primary file where you'll be storing all the credentials and secrets. This is called a local environment file and we, as developers, see a ton of these every day. </p>
 <p>We're assuming you're seeing something similar to this on your code editor:</p>
