@@ -128,10 +128,10 @@ Sends a message to the specified member's DM.
 ### /pins
 Shows all the pins in the channel.
 
-### clearpins
+### /clearpins
 Deletes/unpins all the pins in the channel.
 
-### pin [member]
+### /pin [member]
 Pins the last message by the mentioned *member*.
 
 ## The Inspection Commands
