@@ -1,8 +1,8 @@
 # Command Reference
 
-IgKnite currentry has a total of 37 available bot commands, roughly distributed among four categories. All the commands are built on Discord's bleeding edge API and use the latest features.
+IgKnite currently has more than 40 available bot commands, roughly distributed among four categories. All the commands are built on Discord's bleeding edge API and use the latest features.
 
-The following is a list of all the available commands (updated: October 13, 2022).
+The following is a list of all the available commands (updated: October 17, 2022).
 
 ## The Customization Commands
 ### /makerole [name]
@@ -124,6 +124,15 @@ Sends a message to the specified member's DM.
 |---|---|---|
 | member | Yes | None|
 | msg | Yes | None|
+
+### /pins
+Shows all the pins in the channel.
+
+### /clearpins
+Deletes/unpins all the pins in the channel.
+
+### /pin [member]
+Pins the last message by the mentioned *member*.
 
 ## The Inspection Commands
 ### /guildinfo
