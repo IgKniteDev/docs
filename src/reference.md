@@ -2,11 +2,16 @@
 
 IgKnite currently has more than 40 available bot commands, roughly distributed among four categories. All the commands are built on Discord's bleeding edge API and use the latest features.
 
-The following is a list of all the available commands (updated: October 17, 2022).
+The following is a list of all the available commands (updated: October 30, 2022).
 
 ## The Customization Commands
-### /makerole [name]
-Creates a new server role with the specified *name*.
+### /makerole [name] [color]
+Creates a new server role with the specified *name* and *color*. Color is in hex.
+
+| Parameter | Required | Default |
+|---|---|---|
+| name | Yes | |
+| color | No | #000000 |
 
 ### /assignrole [member] [role]
 Assigns a server *role* to the specified *member*.
@@ -134,6 +139,13 @@ Deletes/unpins all the pins in the channel.
 ### /pin [member]
 Pins the last message by the mentioned *member*.
 
+### /banword [words]
+Bans the comma-separated *words*.
+
+### /slowmode [seconds]
+Enables slowmode in the channel and sets timeout to *seconds*. Set `0` in *seconds* to disable slowmode.
+
+
 ## The Inspection Commands
 ### /guildinfo
 Shows all important information about the server.
@@ -147,6 +159,13 @@ Shows all important information on a user.
 
 ### /roleinfo [role]
 Shows all important information related to a specific role.
+
+### /membercount [sticky]
+Shows total number of members in channel and sidebar (if *sticky* is `True`).
+
+| Parameter | Required | Default |
+|---|---|---|
+| sticky | No | `False` |
 
 ## The Music Commands
 ### /play [keyword]
