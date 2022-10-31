@@ -148,7 +148,10 @@ Deletes/unpins all the pins in the channel.
 Pins the last message by the mentioned *member*.
 
 ### /banword [words]
-Bans the comma-separated _words_.
+Bans the comma-separated _words_. Note that this command will only work on community servers.
+
+### /clearbannedwords
+Remove keywords added to the AutoMod filter by you. Note that this command will only work on community servers.
 
 ### /slowmode [seconds]
 Enables slowmode in the channel and sets timeout to _seconds_. Set `0` in _seconds_ to disable slowmode.
