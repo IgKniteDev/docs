@@ -2,7 +2,7 @@
 
 IgKnite currently has more than 40 available bot commands, roughly distributed among four categories. All the commands are built on Discord's bleeding edge API and use the latest features.
 
-The following is a list of all the available commands (updated: October 30, 2022).
+The following is a list of all the available commands (updated: October 31, 2022).
 
 ## The Customization Commands
 ### /makerole [name]
@@ -149,6 +149,9 @@ Pins the last message by the mentioned *member*.
 
 ### /banword [words]
 Bans the comma-separated _words_.
+
+### /clearbannedwords
+Clears the list of banned keywords added by me.
 
 ### /slowmode [seconds]
 Enables slowmode in the channel and sets timeout to _seconds_. Set `0` in _seconds_ to disable slowmode.
