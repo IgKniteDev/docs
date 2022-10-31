@@ -153,6 +153,9 @@ Bans the comma-separated _words_. Note that this command will only work on commu
 ### /clearbannedwords
 Remove keywords added to the AutoMod filter by IgKnite. Note that this command will only work on community servers.
 
+### /showbannedwords
+Shows keywords added to the AutoMod filter by IgKnite. Note that this command will only work on community servers.
+
 ### /slowmode [seconds]
 Enables slowmode in the channel and sets timeout to _seconds_. Set `0` in _seconds_ to disable slowmode.
 
