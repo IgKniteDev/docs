@@ -57,6 +57,14 @@ Deletes the given *channel* from the server.
 ### /reset
 Deletes all the messages from the current channel.
 
+### /afkvc [channel] [timeout]
+Makes *channel* the AFK channel for the server.
+
+| Parameter | Required | Default |
+|---|---|---|
+| channel | No | afk-vc |
+| timeout | No | 5 mins |
+
 
 ## The General Commands
 ### /avatar [member]
