@@ -9,9 +9,14 @@ Legend:
 
 - ⚔️ BotAdmin
 
+<br>
+
 The following is a list of all the available commands (updated: December 15, 2022).
 
+<br><br>
+
 # ⚙️ General
+
 ### /avatar [member]
 Displays your avatar / the avatar of a server member.
 ### /ping
@@ -31,7 +36,11 @@ Displays active server invites.
 Revokes invites. By default this removes all invites but you can choose a server member.
 ### /audit [limit] 🔪⚔️
 Views the latest entries of the audit log in detail.
+
+<br>
+
 # 🖌 Customization
+
 ### /makerole <name> [color] ⚔️
 Create a new role.
 ### /assignrole <member> ⚔️
@@ -54,7 +63,11 @@ Remove a channel from the server.
 Resets the current channel.
 ### /afkvc [channel] [timeout] ⚔️
 Configures the inactive (AFK) channel for the server.
+
+<br>
+
 # 🔨 Moderation
+
 ### /ban <member> [reason] 🔪⚔️
 Bans a member from the server.
 ### /softban <member> [reason] 🔪⚔️
@@ -65,7 +78,7 @@ Unbans a member from the server.
 Kicks a member from the server.
 ### /timeout <member> [duration] [reason] 🔪⚔️
 Timeouts a member.
-### /purge [amount] 🔪⚔️
+### /purge [amount] [onlyme] 🔪⚔️
 Clears messages within the given index.
 ### /ripplepurge <member> [amount] 🔪⚔️
 Clears messages that are sent by a specific user within the given index.
@@ -87,7 +100,11 @@ Clears the list of banned keywords added by IgKnite.
 Shows the list of banned keywords added by IgKnite.
 ### /clearnicks ⚔️
 Clear everyone's nickname in the guild.
+
+<br>
+
 # 🎧 Music
+
 ### /play <keyword>
 Enqueues playable stuff (basically sings you songs).
 ### /playrich [member]
