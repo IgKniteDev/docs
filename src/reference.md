@@ -37,7 +37,10 @@ Revokes invites. By default this removes all invites but you can choose a server
 ### /audit [limit] 🔪⚔️
 Views the latest entries of the audit log in detail.
 
+<br>
+
 # 🖌 Customization
+
 ### /makerole <name> [color] ⚔️
 Create a new role.
 ### /assignrole <member> ⚔️
@@ -61,7 +64,10 @@ Resets the current channel.
 ### /afkvc [channel] [timeout] ⚔️
 Configures the inactive (AFK) channel for the server.
 
+<br>
+
 # 🔨 Moderation
+
 ### /ban <member> [reason] 🔪⚔️
 Bans a member from the server.
 ### /softban <member> [reason] 🔪⚔️
@@ -95,7 +101,10 @@ Shows the list of banned keywords added by IgKnite.
 ### /clearnicks ⚔️
 Clear everyone's nickname in the guild.
 
+<br>
+
 # 🎧 Music
+
 ### /play <keyword>
 Enqueues playable stuff (basically sings you songs).
 ### /playrich [member]
