@@ -23,7 +23,7 @@ As you can see, there are actually three different commands for you to choose fr
 
 Like actual human DIscord accounts, bots also need to be created in a rather fancy manner. If you have created Discord bots previously then this step might be familiar. If not, don't worry, that's what the documentation is for!
 
-If you'd like to get into more detail about this topic, kindly check out [this article from Discord]() which explores how to create, add and manage a Discord bot from scratch. But if you're more impatient, you can follow along the short path given below. Note that this might get a little misleading for some people:
+If you'd like to get into more detail about this topic, kindly check out [this article from Discord](https://discord.com/developers/docs/getting-started#creating-an-app) which explores how to create, add and manage a Discord bot from scratch. But if you're more impatient, you can follow along the short path given below. Note that this might get a little misleading for some people:
 
 - Navigate to [Discord Developer Portal](https://discord.com/developers).
 - Create a new application.
