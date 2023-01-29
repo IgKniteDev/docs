@@ -6,7 +6,7 @@ If you're not into [Docker](https://docker.com/) or you'd like to set up IgKnite
 
 Unlike the Docker setup method, this one requires a fair bit of dependencies to be installed beforehand.
 
-- You will need a [Python](https://www.python.org/downloads/) installation of **version 3.10 or higher.**
+- You will need a [Python](https://www.python.org/downloads/) installation of **version 3.11 or higher.**
 - You will need a native installation of [ffmpeg](https://www.python.org/downloads/) for running music commands.
 
 For now we'll only set up these two, but later we'll install more using a package manager. <br>
