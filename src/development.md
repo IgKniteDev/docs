@@ -8,14 +8,16 @@ The [**preparation for hosting**](./hosting_preparation.md) sub-chapter discusse
 
 ## Code Style
 
-This project uses the [flake8](https://flake8.pycqa.org) linter for Python and necessary configuration files have also been set up within the repository to support it. [GitHub Actions](https://github.com/features/actions) workflows have been added as well to enforce development with it. 
+In order to maintain a proper and managed syntax, this project has two different packages:
 
-Setting up the linter is as easy as just running one command:
+- [flake8](https://github.com/pycqa/flake8): Linting
+- [black](https://github.com/psf/black): Formatting
 
 ```bash
 # installation
-$ python3 -m pip install flake8
-
-# running
-$ python3 -m flake8 .
+$ python3 -m pip install flake8 black
 ```
+
+<br>
+
+For those who use [Visual Studio Code](https://code.visualstudio.com/), the project also contains configuration for the [isort](https://github.com/microsoft/vscode-isort) extension for automatically organizing imports on every save.
