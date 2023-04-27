@@ -23,7 +23,7 @@ You might also need [Docker Compose](https://docs.docker.com/compose/) if you'd 
 
 ## Instructions
 
-- Method 1: Pull from our official GitHub Package registry
+- Method 1: Pull from our official [GitHub Package registry](https://github.com/IgKniteDev/IgKnite/pkgs/container/igknite).
 
 ```bash
 $ docker pull ghcr.io/igknitedev/igknite:latest
