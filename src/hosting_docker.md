@@ -19,11 +19,17 @@ This time, your very first step will be to install [Docker](https://docker.com/)
 
 Once installed, open it and follow along with the additional setup procedures thrown by the app. This would be a great time to learn about Docker by watching [this 100-seconds video](https://www.youtube.com/watch?v=gAkwW2tuIqE&t=338s) made by Fireship if you already don't use this awesome tool as a developer.
 
-You'll also need [Docker Compose](https://docs.docker.com/compose/) to run IgKnite. For Windows and macOS, it comes bundled with the original Docker package. However, you'll have to install it separately on Linux distributions. <br>
+You might also need [Docker Compose](https://docs.docker.com/compose/) if you'd like to manually build a Docker Image for IgKnite and run it. For Windows and macOS, it comes bundled with the original Docker package. However, you'll have to install it separately on Linux distributions. <br>
 
-## Building
+## Instructions
 
-Run the docker daemon and then type the following command in your terminal:
+- Method 1: Pull from our official GitHub Package registry
+
+```bash
+$ docker pull ghcr.io/igknitedev/igknite:latest
+```
+
+- Method 2: Manual Building
 
 ```bash
 # building the image
