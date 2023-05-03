@@ -6,4 +6,5 @@ src = "src"
 title = "IgKnite"
 
 [output.html]
+preferred-dark-theme = "ayu"
 git-repository-url = "https://github.com/IgKniteDev/docs"
