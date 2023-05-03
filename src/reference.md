@@ -1,6 +1,6 @@
 # Command Reference
 
-IgKnite currently has more than **48** available bot commands, roughly distributed among five categories. All the commands are built on Discord's bleeding edge API and use the latest features.
+IgKnite currently has approximately **48** available bot commands, roughly distributed among five categories. All the commands are built on Discord's bleeding edge API and use the latest features.
 
 Legend: 
 - `<required>` `[optional]` 

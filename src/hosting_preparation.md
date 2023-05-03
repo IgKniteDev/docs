@@ -2,7 +2,7 @@
 
 ## Cloning the repository
 
-Before we continue on with the upcoming procedures, let's make sure we actually have IgKnite downloaded on the machine of your choice.
+Before we continue on with the upcoming procedures, let's make sure we actually have the project downloaded.
 
 In order to clone IgKnite directly from [GitHub](https://github.com/), make sure you have [Git](https://www.git-scm.com) installed. Then, run the following command:
 
@@ -17,19 +17,19 @@ $ git clone git@github.com:IgKniteDev/IgKnite.git
 $ gh repo clone IgKniteDev/IgKnite
 ```
 
-As you can see, there are actually three different commands for you to choose from. This is typically provided by GitHub right at the repository home page, but we've written it here so you don't have to search :P <br>
+As you can see, there are actually three different commands for you to choose from. This is typically provided by GitHub right at the repository home page, but we've written it here so you don't have to search. :P <br>
 
 ## Creating the bot
 
-Like actual human DIscord accounts, bots also need to be created in a rather fancy manner. If you have created Discord bots previously then this step might be familiar. If not, don't worry, that's what the documentation is for!
+Like actual Discord accounts, bots also need to be created in a rather fancy manner. If you have created Discord bots previously then this step might be familiar.
 
-If you'd like to get into more detail about this topic, kindly check out [this article from Discord](https://discord.com/developers/docs/getting-started#creating-an-app) which explores how to create, add and manage a Discord bot from scratch. But if you're more impatient, you can follow along the short path given below. Note that this might get a little misleading for some people:
+If you'd like to get into more detail about this topic, kindly check out [this article from Discord](https://discord.com/developers/docs/getting-started#creating-an-app) which explores how to create, add and manage a Discord bot from scratch. But if you're (a bit) impatient, you can follow along the short path given below:
 
-- Navigate to [Discord Developer Portal](https://discord.com/developers).
-- Create a new application.
-- Choose **Bots** from the sidebar and enable it.
+1. Navigate to [Discord Developer Portal](https://discord.com/developers).
+2. Create a new application.
+3.  Choose **Bots** from the sidebar and enable it.
 
-That's it! You now have a new Discord bot; ready to be online. <br>
+That's it! You now have a new Discord bot; ready to be alive. <br>
 
 But this bot is still not in your server. In order to add the bot to your personal Discord server or have a friend use it:
 
@@ -44,7 +44,7 @@ But this bot is still not in your server. In order to add the bot to your person
 
 ## Getting the files ready 
 
-If you've followed the preparation step given right at the start of this chapter, you should already have IgKnite cloned onto your computer. Let's open the downloaded folder using:
+Let's open the cloned folder using the following command:
 
 ```bash
 # Open and list all the files.
@@ -55,6 +55,8 @@ You'll see a bunch of file names appearing on your terminal. One of them is `.en
 
 - Rename `.env.sample` to `.env` and save.
 - Open the renamed file with your favorite code editor.
+
+Here are some commands to help you:
 
 ```bash
 # copying
@@ -67,7 +69,7 @@ $ nano .env
 
 ## Knowing the secrets
 
-The file you just renamed and opened is the primary file where you'll be storing all the credentials and secrets. This is called a local environment file and we, as developers, see a ton of these every day. 
+The file you just renamed and opened is the primary file where you'll be storing all the credentials and secrets. This is called a local environment file.
 
 We're assuming you're seeing something similar to this on your code editor:
 
@@ -94,7 +96,7 @@ That's one done! If you'd like to obtain the other environment variable originat
 
 Speaking of the variables related to Spotify, those are relatively easy to get as well. To get the rest of the required secrets:
 
-- Navigate to the [Spotify for Developers] web page.
+- Navigate to the [Spotify for Developers](https://developer.spotify.com) web page.
 - Choose **Dashboard** from the top bar and click on 'Create an App'.
 - Copy the **Client ID** from the app's window and paste it inside the `SPOTIFY_CLIENT_ID` variable.
 - Similarly, copy the **Client Secret** and paste it inside the `SPOTIFY_CLIENT_SECRETS` variable. <br>

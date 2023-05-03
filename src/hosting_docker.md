@@ -11,13 +11,11 @@ Previously, we ran a command to open and list all the files within IgKnite's dir
 $ cd IgKnite && ls
 ```
 
-Notice something? Even if you don't, most Docker uses have already noticed a `Dockerfile` within the directory. This file works as a blueprint for building Docker images. <br>
+Notice something? Most Docker uses have already noticed a `Dockerfile` within the directory. This file works as a blueprint for building Docker images. <br>
 
 ## Preparing
 
-This time, your very first step will be to install [Docker](https://docker.com/) onto your computer. If you are a developer or a DevOps engineer, there's a high probability that you already have it :P
-
-Once installed, open it and follow along with the additional setup procedures thrown by the app. This would be a great time to learn about Docker by watching [this 100-seconds video](https://www.youtube.com/watch?v=gAkwW2tuIqE&t=338s) made by Fireship if you already don't use this awesome tool as a developer.
+This time, your very first step will be to install [Docker](https://docker.com/) onto your computer. Once installed, open it and follow along with the additional setup procedures thrown by the app. This would be a great time to learn about Docker by watching [this 100-seconds video](https://www.youtube.com/watch?v=gAkwW2tuIqE&t=338s) made by Fireship if you already don't use this tool already.
 
 You might also need [Docker Compose](https://docs.docker.com/compose/) if you'd like to manually build a Docker Image for IgKnite and run it. For Windows and macOS, it comes bundled with the original Docker package. However, you'll have to install it separately on Linux distributions. <br>
 

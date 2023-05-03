@@ -10,8 +10,8 @@ The [**preparation for hosting**](./hosting_preparation.md) sub-chapter discusse
 
 In order to maintain a proper and managed syntax, this project has two different packages:
 
-- [flake8](https://github.com/pycqa/flake8): Linting
-- [black](https://github.com/psf/black): Formatting
+- [flake8](https://github.com/pycqa/flake8) for linting
+- [black](https://github.com/psf/black) for formatting
 
 ```bash
 # installation

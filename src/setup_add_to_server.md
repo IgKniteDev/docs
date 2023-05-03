@@ -16,7 +16,7 @@ This method, unlike the previous one, is new and uses Discord's [In-App Authoriz
 
 1. If you have a friend who has IgKnite 'injected' in their Discord server, then you can head over to that server and click on IgKnite's avatar to toggle its profile view.
 
-2. See a large blue button saying **'Add to Server'**? Click it and you will be prompted to choose which server you would like to have IgKnite. Note that you might also be asked for an authentication code if you have 2FA enabled in your Discord account.
+2. See a large blue button saying **'Add to Server'**? Click it and you will be prompted to choose which server you would like to have IgKnite. Note that you might also be asked for an authentication code if you have two-factor authentication enabled in your Discord account.
 
 3. Click on '**Continue**'. At this stage, you will see a bunch of ticked options. These represent the global permissions which allow IgKnite to run properly (don't untick any of them, otherwise you might see errors popping in once you start using the bot).
 

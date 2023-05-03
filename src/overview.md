@@ -1,11 +1,5 @@
 # Overview
 
-## What is a bot?
-
-IgKnite, like many other Discord applications, is a **bot.** Being a bot on Discord mostly means using the endpoints provided by it via its API (Application Programming Interface) to do some action. There are tons of options to choose from, in this case. [**MEE6**](https://mee6.xyz), [**Fredboat**](https://fredboat.com), [**PokeTwo**](https://poketwo.net) - these are some of the most popular bots that you can access.
-
-<br>
-
 ## Why IgKnite?
 
 IgKnite, unlike most other Discord bots, is **open-source**, meaning that all of the aspects of it is open to and maintained by, (yes you guessed it) the community!

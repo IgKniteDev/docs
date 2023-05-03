@@ -6,8 +6,8 @@ Once you've added IgKnite to your Discord server, we can continue on with the se
 
 Most moderation Discord bots lock certain features to certain individuals, roles or permission overrides. IgKnite currently handles permissions using roles, and to be precise, you'll have to create two roles:
 
-- `BotMod` - For moderators.
-- `BotAdmin` - For administratiors.
+- `BotMod` for moderators.
+- `BotAdmin` for administratiors.
 
 These two roles will help unlock and trigger certain moderation commands for the people you choose to give these roles to. Make sure to carefully select and append the roles. IgKnite doesn't really need much more setup than this! <br>
 
