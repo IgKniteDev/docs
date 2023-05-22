@@ -11,7 +11,7 @@ Legend:
 
 <br>
 
-The following is a list of all the available commands (updated: December 15, 2022).
+The following is a list of all the available commands (updated: May 22, 2023).
 
 <br><br>
 
