@@ -17,7 +17,7 @@ The following is a list of all the available commands (updated: May 22, 2023).
 
 ## ⚙️ General
 
-### /avatar [member]
+### /avatar `[member]`
 Displays your avatar / the avatar of a server member.
 ### /ping
 Shows the bot's current response time and more.
@@ -30,34 +30,34 @@ Get to know more about IgKnite!
 
 ### /guildinfo 🔪⚔️
 Shows all important information about the server.
-### /userinfo [member] 🔪⚔️
+### /userinfo `[member]` 🔪⚔️
 Shows all important information on a user.
 ### /roleinfo `<role>` 🔪⚔️
 Shows all important information related to a specific role.
 ### /invites 🔪⚔️
 Displays active server invites.
-### /revokeinvites [member] 🔪⚔️
+### /revokeinvites `[member]` 🔪⚔️
 Revokes invites. By default this removes all invites but you can choose a server member.
-### /audit [limit] 🔪⚔️
+### /audit `[limit]` 🔪⚔️
 Views the latest entries of the audit log in detail.
 
 <br>
 
 ## 🖌 Customization
 
-### /makerole `<name>` [color] ⚔️
+### /makerole `<name>` `[color]` ⚔️
 Create a new role.
 ### /assignrole `<member>` ⚔️
 Assign a role to a server member.
 ### /removerole `<role>` ⚔️
 Revome a role from the server.
-### /makeinvite [max_age] [max_uses] [reason] 🔪⚔️
+### /makeinvite `[max_age]` `[max_uses]` `[reason]` 🔪⚔️
 Create an invitation link to the server.
 ### /nick `<member>` `<nickname>` 🔪⚔️
 Change nickname of a member.
-### /makechannel `<name>` [category] [topic] ⚔️
+### /makechannel `<name>` `[category]` `[topic]` ⚔️
 Create a new text channel.
-### /makevc `<name>` [category] ⚔️
+### /makevc `<name>` `[category]` ⚔️
 Create a new voice channel.
 ### /makecategory `<name>` ⚔️
 Create a new channel category.
@@ -65,26 +65,26 @@ Create a new channel category.
 Remove a channel from the server.
 ### /reset ⚔️
 Resets the current channel.
-### /afkvc [channel] [timeout] ⚔️
+### /afkvc `[channel]` `[timeout]` ⚔️
 Configures the inactive (AFK) channel for the server.
 
 <br>
 
 ## 🔨 Moderation
 
-### /ban `<member>` [reason] 🔪⚔️
+### /ban `<member>` `[reason]` 🔪⚔️
 Bans a member from the server.
-### /softban `<member>` [reason] 🔪⚔️
+### /softban `<member>` `[reason]` 🔪⚔️
 Temporarily bans members to delete their messages.
 ### /unban `<member>` 🔪⚔️
 Unbans a member from the server.
-### /kick `<member>` [reason] 🔪⚔️
+### /kick `<member>` `[reason]` 🔪⚔️
 Kicks a member from the server.
-### /timeout `<member>` [duration] [reason] 🔪⚔️
+### /timeout `<member>` `[duration]` `[reason]` 🔪⚔️
 Timeouts a member.
-### /purge [amount] [onlyme] 🔪⚔️
+### /purge `[amount]` `[onlyme]` 🔪⚔️
 Clears messages within the given index.
-### /ripplepurge `<member>` [amount] 🔪⚔️
+### /ripplepurge `<member>` `[amount]` 🔪⚔️
 Clears messages that are sent by a specific user within the given index.
 ### /snipe 🔪⚔️
 Snipes messages within 25 seconds of their deletion.
@@ -109,9 +109,9 @@ Clear everyone's nickname in the guild.
 
 ## 🎧 Music
 
-### /play `<keyword>` [boosted]
+### /play `<keyword>` `[boosted]`
 Enqueues playable stuff (basically sings you songs).
-### /playrich [member]
+### /playrich `[member]`
 Tries to enqueue a song from one's Spotify rich presence.
 ### /pause
 Pause the currently playing song.
@@ -119,7 +119,7 @@ Pause the currently playing song.
 Resume the currently playing song.
 ### /stop
 Stops playing songs and clears the queue.
-### /join [channel]
+### /join `[channel]`
 Joins the voice channel you're in. You can also specify which channel to join.
 ### /leave
 Clears the queue and leaves the voice channel.
