@@ -136,6 +136,6 @@ async def _ban_message(
 
 ### 3. Test and deploy
 
-Once you are done making your changes, push them to your fork and create a valid pull request. [Here's](https://github.com/IgKniteDev/IgKnite/pull/36) an example pull request which you can have a look at to learn about the pattern.
+Once you are done making your changes, push them to your fork and create a valid pull request. [Here's](https://github.com/IgKniteDev/IgKnite/pull/221) an example pull request which you can have a look at to learn about the pattern.
 
 The pull request must pass the given workflows (the ones mentioned earlier) and receive a green 'check' symbol to qualify for a merge. We hope you'll do your best to gain it!
