@@ -27,6 +27,12 @@ Discord has three types of commands:
 Below is an example of a very basic slash command which greets a server member. You'll be using such syntax in most of your commands.
 
 ```python
+# sample imports
+import disnake
+from disnake.ext import commands
+from disnake.ext.commands import Param  # used for options
+
+# the cog
 class SomeCog(commands.Cog):
 
 ...
@@ -34,20 +40,12 @@ class SomeCog(commands.Cog):
 	@commands.slash_command(
 		name='greet',
 		description='Greets a member!',
-		options=[
-			Option(
-				'member',
-				'Mention the server member.',
-				OptionType.user, # disnake.OptionType
-				required=True # not needed if False
-			)
-		],
-		dm_permission=False # cannot be used in DMs
+		dm_permission=False  # disables the command inside DMs
 	)
 	async def _greet(
 		self,
 		inter: disnake.CommandInteraction,
-		member: disnake.Member
+		member: disnake.Member = Param(description='Mention the server member.')
 	) -> None:
 		await member.send(
 			f'Hey there! Welcome to {inter.guild.name}.'
@@ -78,27 +76,17 @@ async def _ban_backend(
 @commands.slash_command(
 	name='ban',
 	description='Bans a member.',
-	options=[
-		Option(
-			'member',
-			'Mention the server member.',
-			OptionType.user,
-			required=True
-		),
-		Option(
-			'reason',
-			'Give a reason for the softban.',
-			OptionType.string
-		)
-	],
 	dm_permission=False
 )
 @commands.has_any_role(LockRoles.mod, LockRoles.admin)
 async def _ban(
 	self,
 	inter: disnake.CommandInteraction,
-	member: disnake.Member,
-	reason: str = 'No reason provided.'
+	member: disnake.Member = Param(description='Mention the server member.'),
+	reason: str = Param(
+		description='Give a reason for the ban.',
+		default='Default reason.'  # having a default value makes it optional
+	)
 ) -> None:
 	await self._ban_backend(inter, member, reason=reason)
 
