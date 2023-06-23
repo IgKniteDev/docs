@@ -1,6 +1,6 @@
 # Command Reference
 
-IgKnite currently has approximately **48** available bot commands, roughly distributed among five categories. All the commands are built on Discord's bleeding edge API and use the latest features.
+IgKnite currently has approximately **49** available bot commands, roughly distributed among five categories. All the commands are built on Discord's bleeding edge API and use the latest features.
 
 Legend: 
 - `<required>` `[optional]` 
@@ -11,9 +11,8 @@ Legend:
 
 <br>
 
-The following is a list of all the available commands (updated: May 22, 2023).
+The following is a list of all the available commands (updated: Jun 23, 2023).
 
-<br><br>
 
 ## ⚙️ General
 
@@ -55,10 +54,12 @@ Revome a role from the server.
 Create an invitation link to the server.
 ### /nick `<member>` `<nickname>` 🔪⚔️
 Change nickname of a member.
-### /makechannel `<name>` `[category]` `[topic]` ⚔️
+### /makechannel `<name>` `[category]` `[topic]` `[slowmode]` ⚔️
 Create a new text channel.
-### /makevc `<name>` `[category]` ⚔️
+### /makevoice `<name>` `[category]` `[slowmode]` ⚔️
 Create a new voice channel.
+### /makestage `<name>` `[category]` `[slowmode] ` ⚔️
+Create a new stage channel.
 ### /makecategory `<name>` ⚔️
 Create a new channel category.
 ### /removechannel `<channel>` ⚔️
@@ -67,6 +68,8 @@ Remove a channel from the server.
 Resets the current channel.
 ### /afkvc `[channel]` `[timeout]` ⚔️
 Configures the inactive (AFK) channel for the server.
+### /slowmode `<seconds>` 🔪⚔️
+Sets slowmode for the current channel.
 
 <br>
 
@@ -94,8 +97,6 @@ Send DM to specific users.
 Shows all pinned messages in the current channel.
 ### /clearpins 🔪⚔️
 Clears all pinned messages in the current channel.
-### /slowmode `<seconds>` 🔪⚔️
-Sets slowmode for the current channel.
 ### /banword `<keywords>` ⚔️
 Add keywords to ban.
 ### /clearbannedwords ⚔️
