@@ -10,14 +10,10 @@ The [**preparation for hosting**](./hosting_preparation.md) sub-chapter discusse
 
 In order to maintain a proper and managed syntax, this project has two different packages:
 
-- [flake8](https://github.com/pycqa/flake8) for linting
+- [ruff](https://github.com/astral-sh/ruff) for linting and import organization
 - [black](https://github.com/psf/black) for formatting
 
 ```bash
 # installation
-$ python3 -m pip install flake8 black
+$ python3 -m pip install ruff black
 ```
-
-<br>
-
-For those who use [Visual Studio Code](https://code.visualstudio.com/), the project also contains configuration for the [isort](https://github.com/microsoft/vscode-isort) extension for automatically organizing imports on every save.
