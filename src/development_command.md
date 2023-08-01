@@ -44,7 +44,7 @@ class SomeCog(commands.Cog):
 	)
 	async def _greet(
 		self,
-		inter: disnake.CommandInteraction,
+		inter: disnake.CommandInter,
 		member: disnake.Member = Param(description='Mention the server member.')
 	) -> None:
 		await member.send(
@@ -61,7 +61,7 @@ On the other hand, you can also write code and deploy to all three types of comm
 
 async def _ban_backend(
 	self,
-	inter: disnake.CommandInteraction,
+	inter: disnake.CommandInter,
 	member: disnake.Member,
 	reason: str = 'No reason provided.'
 ) -> None:
@@ -81,7 +81,7 @@ async def _ban_backend(
 @commands.has_any_role(LockRoles.mod, LockRoles.admin)
 async def _ban(
 	self,
-	inter: disnake.CommandInteraction,
+	inter: disnake.CommandInter,
 	member: disnake.Member = Param(description='Mention the server member.'),
 	reason: str = Param(
 		description='Give a reason for the ban.',
@@ -99,7 +99,7 @@ async def _ban(
 @commands.has_any_role(LockRoles.mod, LockRoles.admin)
 async def _ban_user(
 	self,
-	inter: disnake.CommandInteraction,
+	inter: disnake.CommandInter,
 	member: disnake.Member
 ) -> None:
 	await self._ban_backend(inter, member)
@@ -113,7 +113,7 @@ async def _ban_user(
 @commands.has_any_role(LockRoles.mod, LockRoles.admin)
 async def _ban_message(
 	self,
-	inter: disnake.CommandInteraction,
+	inter: disnake.CommandInter,
 	message: disnake.Message
 ) -> None:
 	await self._ban_backend(inter, message.author)

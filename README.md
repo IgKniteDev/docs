@@ -9,7 +9,7 @@ This is the repository for the official documentation of IgKnite. Read about all
 Building this documentation from thin air requires the [mdbook (Rust)](https://rust-lang.github.io/mdBook/) package.
 
 ```bash
-# install it globally using cargo
+# Install it globally using cargo.
 
 $ cargo install mdbook --vers [version-num]
 ```
