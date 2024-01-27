@@ -75,7 +75,6 @@ We're assuming you're seeing something similar to this on your code editor:
 
 ```
 DISCORD_TOKEN=
-DISCORD_OWNER_ID=
 SPOTIFY_CLIENT_ID=
 SPOTIFY_CLIENT_SECRET=
 ```
