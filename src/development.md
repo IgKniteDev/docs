@@ -8,12 +8,9 @@ The [**preparation for hosting**](./hosting_preparation.md) sub-chapter discusse
 
 ## Code Style
 
-In order to maintain a proper and managed syntax, this project has two different packages:
-
-- [ruff](https://github.com/astral-sh/ruff) for linting and import organization
-- [black](https://github.com/psf/black) for formatting
+We have used [ruff](https://github.com/astral-sh/ruff) inside the entire project to ensure a proper and managed syntax. In this case, ruff powers both the linting and formatting of the codebase.
 
 ```bash
 # installation
-$ python3 -m pip install ruff black
+$ python3 -m pip install ruff
 ```
