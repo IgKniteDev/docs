@@ -6,7 +6,7 @@ The very first, and the very basic, step of using IgKnite is to add it to your p
 
 This method has been on Discord for a while now, and involves [OAuth](https://en.wikipedia.org/wiki/OAuth) URLs.
 
-- Just [click here](https://discord.com/oauth2/authorize?client_id=1274430156928319489&permissions=63084479115255&integration_type=0&scope=bot+applications.commands) without going to the website to do the same. <br>
+- Just [click here](https://discord.com/oauth2/authorize?client_id=1274430156928319489&permissions=63084479115255&integration_type=0&scope=bot+applications.commands) to add IgKnite to your desired Discord server using an OAuth2 URL. <br>
 
 ## Method 2: The Profile
 
