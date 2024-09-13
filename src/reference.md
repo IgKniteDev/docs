@@ -14,7 +14,7 @@ Legend:
 The following is a list of all the available commands (updated: Jun 23, 2023).
 
 
-## ⚙️ General
+## General
 
 ### /avatar `[member]`
 Displays your avatar / the avatar of a server member.
@@ -25,7 +25,7 @@ Get to know more about IgKnite!
 
 <br>
 
-## 🔎 Inspection
+## Inspection
 
 ### /guildinfo 🔪⚔️
 Shows all important information about the server.
@@ -42,7 +42,7 @@ Views the latest entries of the audit log in detail.
 
 <br>
 
-## 🖌 Customization
+## Customization
 
 ### /makerole `<name>` `[color]` ⚔️
 Create a new role.
@@ -73,7 +73,7 @@ Sets slowmode for the current channel.
 
 <br>
 
-## 🔨 Moderation
+## Moderation
 
 ### /ban `<member>` `[reason]` 🔪⚔️
 Bans a member from the server.
@@ -108,7 +108,7 @@ Clear everyone's nickname in the guild.
 
 <br>
 
-## 🎧 Music
+## Music
 
 ### /play `<keyword>` `[boosted]`
 Enqueues playable stuff (basically sings you songs).
